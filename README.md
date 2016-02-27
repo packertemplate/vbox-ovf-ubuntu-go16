@@ -7,7 +7,8 @@ This build will be local, and we will be using `virtualbox-ovf` builder.
 This project will create vagrant boxes ready to run go16.
 
 ## Pre Requirements
-1. Have ATLAS_TOKEN set
+
+- Have ATLAS_TOKEN set
 
 ## How to use this repo
 
@@ -21,7 +22,13 @@ This project will create vagrant boxes ready to run go16.
 username = alvaro
 # ie sufix = -project
 sufix = -go16
+# path for source files
+# source = source
 ```
+
+In order to use the same source files in more than one project, you can set a variable
+ie `export source=<path>` or you can uncomment and the same in the Makefile
+`source=<path>`
 
 - Update /scripts/provision.sh
 
