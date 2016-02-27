@@ -11,7 +11,7 @@ This project will create vagrant boxes ready to run go16.
 
 ## How to use this repo
 
-- git clone <this repo> <project name>
+- `git clone <this repo> <project name>`
 
 
 - Edit Makefile
