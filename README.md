@@ -11,10 +11,10 @@ This project will create vagrant boxes ready to run go16.
 
 ## How to use this repo
 
-`git clone <this repo> <project name>
+- git clone <this repo> <project name>
 
 
-1. Edit Makefile
+- Edit Makefile
 
 ```Makefile
 #atlas username or atlas organization to upload the boxes
@@ -23,7 +23,7 @@ username = alvaro
 sufix = -go16
 ```
 
-1. Update /scripts/provision.sh
+- Update /scripts/provision.sh
 
 ## First run
 
