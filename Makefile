@@ -31,6 +31,7 @@ cleanall:
 	-rm -fr $(OSDIR)
 
 %.box: $(OVF)
+	-@output-vbox-ovf/
 	packer build -var "os=$(@:.box=)" -var "source=$(source)" -var "username=$(username)" -var "vm_name=$(@:.box=$(sufix))" template.json
 
 #12.04

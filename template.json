@@ -9,6 +9,12 @@
     {
       "type": "virtualbox-ovf",
       "name": "vbox-ovf",
+      "vm_name": "{{user `vm_name`}}",
+      "vboxmanage": [
+        ["modifyvm", "{{.Name}}", "--vram", "32"],
+        ["modifyvm", "{{.Name}}", "--memory", "4096"]
+      ],
+      "headless" : 0,
       "source_path": "{{user `source`}}/{{user `os`}}/box.ovf",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
